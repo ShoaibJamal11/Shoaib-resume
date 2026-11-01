@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shoaib Jamal – AI Engineer & Full-Stack Developer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#121830;--bg2:#1a2242;--ink:#e9eef9;--mute:#9aa6c4;--line:#2b3560;--acc:#5cc8ff;--warn:#ffc857;--ok:#46d38a;--on:#06223a;
+--d:'Bricolage Grotesque',Georgia,sans-serif;--b:'IBM Plex Sans',system-ui,sans-serif;--m:'IBM Plex Mono',ui-monospace,monospace;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{-webkit-text-size-adjust:100%;color-scheme:dark}
+:root[data-theme="light"]{--bg:#eef2fa;--bg2:#fff;--ink:#14213d;--mute:#53607f;--line:#cfd8ea;--acc:#0a6bb5;--warn:#a86000;--ok:#12804a;--on:#fff}
+:root[data-theme="dark"]{--bg:#121830;--bg2:#1a2242;--ink:#e9eef9;--mute:#9aa6c4;--line:#2b3560;--acc:#5cc8ff;--warn:#ffc857;--ok:#46d38a;--on:#06223a}
+html{scroll-behavior:smooth;scroll-padding-top:calc(72px + env(safe-area-inset-top,0px))}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--b)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:30}
+a{color:inherit}
+h1,h2,h3{font-family:var(--d);margin:0;line-height:1.05;letter-spacing:-.02em}
+h2{font-size:clamp(30px,5vw,50px);max-width:20ch}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:84px 0 20px}
+.lead{color:var(--mute);max-width:62ch;margin:14px 0 0}
+#bar{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:var(--acc);z-index:40}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:62px}
+nav b{font-family:var(--d);font-size:20px;margin-right:auto}
+nav a.l{text-decoration:none;color:var(--mute);font-size:15px}nav a.l:hover{color:var(--ink)}
+@media(max-width:800px){nav a.l{display:none}}
+.btn{display:inline-block;background:var(--acc);color:var(--on);font:600 15px var(--b);padding:12px 20px;border-radius:10px;text-decoration:none;border:0;cursor:pointer}
+.btn.o{background:none;color:var(--ink);border:1px solid var(--line)}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+.ic{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;width:38px;height:38px;cursor:pointer}
+.hero{padding:64px 0 36px;position:relative;overflow:hidden}.hero::before{content:"";position:absolute;width:560px;height:560px;right:-140px;top:-180px;border-radius:50%;background:radial-gradient(circle,var(--acc),transparent 65%);opacity:.16;animation:drift 14s ease-in-out infinite alternate}@keyframes drift{to{transform:translate(-160px,140px) scale(1.25)}}.hero .wrap{position:relative}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center}
+@media(max-width:900px){.hero .wrap{grid-template-columns:1fr}}
+h1{font-size:clamp(38px,6.6vw,76px);font-weight:800}
+h1 em{font-style:normal;color:var(--acc)}
+.avail{display:inline-flex;gap:8px;align-items:center;color:var(--mute);font-size:14px;margin-bottom:16px}
+.avail i{width:9px;height:9px;border-radius:50%;background:var(--ok);animation:p 2s infinite}
+@keyframes p{0%{box-shadow:0 0 0 0 var(--ok)}70%,100%{box-shadow:0 0 0 10px #0000}}
+@media(prefers-reduced-motion:reduce){.avail i{animation:none}html{scroll-behavior:auto}}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.glance{display:grid;gap:8px;margin:22px 0 0;padding:0;list-style:none}
+.glance li{display:flex;gap:10px}.glance li::before{content:"✓";color:var(--ok);font-weight:700}
+.demo{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:22px}
+.demo h3{font-size:19px}small{color:var(--mute);font-size:13px}
+.ctl{display:grid;grid-template-columns:1fr auto;gap:2px 10px;margin-top:14px;font-size:14px;color:var(--mute)}
+.ctl output{font-family:var(--m);color:var(--ink)}
+.ctl input{grid-column:1/3;width:100%;accent-color:var(--acc)}
+.res{display:flex;justify-content:space-between;align-items:end;margin-top:14px;gap:10px}
+.res b{font-family:var(--d);font-size:34px;color:var(--warn);line-height:1;display:block}
+svg.ch{width:100%;height:110px;margin-top:8px;display:block}
+.proof{border-block:1px solid var(--line);padding:28px 0;margin-top:30px}
+.proof .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+@media(max-width:760px){.proof .wrap{grid-template-columns:1fr 1fr}}
+.proof b{font-family:var(--d);font-size:42px;display:block;line-height:1}
+.proof span{color:var(--mute);font-size:14px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:30px 0 16px}
+.tab{background:none;border:1px solid var(--line);color:var(--mute);padding:10px 16px;border-radius:999px;cursor:pointer;font:500 15px var(--b)}
+.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.panel{display:grid;grid-template-columns:1fr 1fr 1fr;background:var(--bg2);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+.panel>div{padding:24px;border-right:1px solid var(--line)}.panel>div:last-child{border:0}
+.panel h4{margin:0 0 8px;font:600 15px var(--b);color:var(--acc)}.panel p{margin:0}
+@media(max-width:800px){.panel{grid-template-columns:1fr}.panel>div{border-right:0;border-bottom:1px solid var(--line)}}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chip{border:1px solid var(--line);border-radius:6px;padding:3px 9px;font-size:13px;color:var(--mute)}
+.row2{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.proj{display:grid;grid-template-columns:.75fr 1.25fr;gap:22px;margin-top:30px;align-items:start}
+@media(max-width:860px){.proj{grid-template-columns:1fr}.plist{flex-direction:row!important;overflow-x:auto;padding-bottom:6px}.pi{min-width:210px}}
+.plist{display:flex;flex-direction:column;gap:8px;position:sticky;top:80px}
+@media(max-width:860px){.plist{position:static}}
+.pi{text-align:left;background:none;border:1px solid var(--line);color:var(--ink);border-radius:12px;padding:12px 16px;cursor:pointer;font:600 16px var(--b)}
+.pi span{display:block;font-weight:400;color:var(--mute);font-size:14px}
+.pi[aria-selected=true]{background:var(--bg2);border-color:var(--acc)}
+.pview{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:26px}
+.pview h3{font-size:30px}.pview .tag{color:var(--mute);margin:8px 0 0}
+.win{border:1px solid var(--line);border-radius:12px;margin:20px 0;overflow:hidden;background:var(--bg)}
+.win header{display:flex;gap:6px;align-items:center;padding:9px 12px;border-bottom:1px solid var(--line);font-size:12px;color:var(--mute)}
+.win header i{width:9px;height:9px;border-radius:50%;background:var(--line)}.win header span{margin-left:8px}
+.win .r{display:grid;grid-template-columns:1fr auto;gap:12px;padding:11px 14px;border-bottom:1px solid var(--line);font-size:14px;animation:in .4s both}
+.win .r:last-child{border:0}
+.win .r b{font:500 13px var(--m)}.win .ok{color:var(--ok)}.win .flag{color:var(--warn)}
+@keyframes in{from{opacity:0;transform:translateX(-8px)}}
+@media(prefers-reduced-motion:reduce){.win .r{animation:none}}
+.sub{font:600 14px var(--b);color:var(--acc);margin:18px 0 8px}
+.flow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.flow div{border:1px solid var(--line);border-radius:8px;padding:7px 12px;font-size:14px}
+.flow div:last-child{border-color:var(--acc);color:var(--acc)}.flow i{color:var(--mute);font-style:normal}
+.pview ul{padding-left:18px;margin:0;color:var(--mute)}.pview li{margin:5px 0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px;counter-reset:s}
+@media(max-width:860px){.steps{grid-template-columns:1fr 1fr}}@media(max-width:520px){.steps{grid-template-columns:1fr}}
+.steps div{border-top:2px solid var(--acc);padding-top:12px;counter-increment:s}
+.steps div::before{content:counter(s);font:500 14px var(--m);color:var(--acc)}
+.steps h3{font-size:20px;margin:4px 0 6px}.steps p{margin:0;color:var(--mute);font-size:15px}
+.two{display:grid;grid-template-columns:1.3fr .7fr;gap:50px}@media(max-width:860px){.two{grid-template-columns:1fr;gap:20px}}
+.tl{margin-top:30px;border-left:2px solid var(--line);padding-left:26px}
+.tl>div{position:relative;padding-bottom:26px}
+.tl>div::before{content:"";position:absolute;left:-34px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--acc)}
+.tl time{font:500 13px var(--m);color:var(--mute)}.tl h3{font-size:22px;margin:3px 0}.tl p{margin:4px 0 0;color:var(--mute)}
+.sk .row{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:14px 0;border-top:1px solid var(--line)}
+.sk .row b{font:600 15px var(--b);color:var(--mute)}
+@media(max-width:600px){.sk .row{grid-template-columns:1fr}}
+.sk .chip{color:var(--ink)}.sk .chip:hover{border-color:var(--acc)}
+.end{background:var(--bg2);border-block:1px solid var(--line);margin-top:60px;padding:70px 0}
+.end .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px}@media(max-width:860px){.end .wrap{grid-template-columns:1fr}}
+form{display:grid;gap:10px}
+form input,form select,form textarea{width:100%;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;font:16px var(--b)}
+.links{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+footer{padding:24px 0;color:var(--mute);font-size:14px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:25;box-shadow:0 6px 24px #0006}
+.flowband{padding:34px 0 6px}.fb{display:grid;grid-template-columns:1fr auto 1.2fr;gap:20px;align-items:center}@media(max-width:760px){.fb{grid-template-columns:1fr}}.rc{position:relative;overflow:hidden;background:#f6f1e4;color:#222;border-radius:10px;padding:16px 18px;font:14px/1.5 var(--m);max-width:300px}.rc p{margin:2px 0}.scan{position:absolute;left:0;right:0;top:0;height:2px;background:#0a6bb5;box-shadow:0 0 14px #0a6bb5;animation:sc 3s ease-in-out infinite}@keyframes sc{50%{top:100%}}.ai{border:1px solid var(--acc);color:var(--acc);border-radius:999px;padding:10px 18px;font:600 14px var(--b);text-align:center;animation:pl 2s ease-in-out infinite}@keyframes pl{50%{box-shadow:0 0 0 10px #5cc8ff22}}.json{margin:0;background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:16px 18px;font:14px/1.7 var(--m);overflow-x:auto}.json span{display:block;animation:ln 9s infinite both;animation-delay:calc(var(--i)*.6s)}@keyframes ln{0%{opacity:0;transform:translateX(-6px)}6%,85%{opacity:1;transform:none}100%{opacity:0}}.fc{margin-top:12px;display:block}.mq{overflow:hidden;border-block:1px solid var(--line);margin-top:26px;padding:12px 0}.mt{display:flex;gap:10px;width:max-content;animation:mq 34s linear infinite}.mq:hover .mt{animation-play-state:paused}@keyframes mq{to{transform:translateX(-50%)}}.card,.acc details{transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-4px);border-color:var(--acc)}.acc details:hover{border-color:var(--acc)}.btn{transition:transform .15s}.btn:hover{transform:translateY(-2px)}@supports(animation-timeline:view()){.card,.acc details,.steps>div,.tl>div{animation:rv linear both;animation-timeline:view();animation-range:entry 0% entry 35%}@keyframes rv{from{opacity:0;transform:translateY(24px)}}}@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}}
+.js-only{display:none}.js .js-only{display:inline-block}.js .demo.js-only{display:block}.hero .wrap>div:only-child{grid-column:1/-1}
+.acc{display:grid;gap:10px;margin-top:30px}.acc details{background:var(--bg2);border:1px solid var(--line);border-radius:14px}.acc summary{cursor:pointer;padding:16px 20px;font:600 18px var(--b);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:10px}.acc summary::-webkit-details-marker{display:none}.acc summary::after{content:"+";color:var(--acc);font-size:24px;line-height:1}.acc details[open] summary::after{content:"–"}.acc summary span{display:block;font-weight:400;color:var(--mute);font-size:14px}.acc .pview{border:0;background:none;padding:0 22px 22px}
+.ogrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}@media(max-width:960px){.ogrid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.ogrid{grid-template-columns:1fr}}.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:22px}.card h3{font-size:22px;margin-bottom:12px}.card>div+div{margin-top:14px}.card h4{margin:0 0 6px;font:600 14px var(--b);color:var(--acc)}.card p{margin:0 0 4px}
+@media print{details{display:block}details>*{display:block}nav,#bar,.fab,.hero .demo,.cta,.tabs,.end form,.ic,.row2,.plist{display:none!important}body{background:#fff;color:#000}section{padding:20px 0}}
+</style>
+<script>document.documentElement.className="js"</script></head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap"><b>Shoaib Jamal</b>
+<a class="l" href="#offer">Services</a><a class="l" href="#work">Projects</a><a class="l" href="#path">Resume</a><a class="l" href="#stack">Stack</a>
+<button class="ic js-only" id="th" aria-label="Switch light or dark theme">◐</button><a class="btn" href="#hire">Hire me</a></div></nav>
+
+<header class="hero"><div class="wrap">
+<div>
+<div class="avail"><i></i>Open to freelance, contract and full-time roles</div>
+<h1>AI tools that read your documents, check your numbers and <em>write the report.</em></h1>
+<p class="lead">I’m Shoaib, an AI engineer and full-stack developer in Karachi. I ship LLM and computer-vision products, from a five-tool finance suite to Dockerised n8n pipelines.</p>
+<ul class="glance"><li>Finance AI: cash-flow forecasting, receipt audits, reconciliation</li><li>Vision AI: invoices to ERP-ready JSON, YOLOv8 detection</li><li>Full-stack delivery: Next.js 14, TypeScript, deployed on Vercel</li></ul>
+<div class="cta"><a class="btn" href="#hire">Start a project</a><a class="btn o" href="#work">See 9 projects</a><button class="btn o js-only" onclick="window.print()">Resume PDF</button></div>
+</div>
+<div class="demo js-only">
+<h3>Try it: when does the cash hit zero?</h3>
+<small>A sketch of the idea behind RunwayAI. Runs in your browser, nothing is sent.</small>
+<div class="ctl"><label for="c">Cash in bank</label><output id="co"></output><input id="c" type="range" min="50" max="2000" step="10" value="600">
+<label for="b">Monthly burn</label><output id="bo"></output><input id="b" type="range" min="10" max="300" step="5" value="70">
+<label for="g">Burn growth per month</label><output id="go"></output><input id="g" type="range" min="0" max="12" step="1" value="3"></div>
+<div class="res"><div><small>Cash-zero date</small><b id="dt">–</b></div><small id="mn"></small></div>
+<svg class="ch" id="svg" viewBox="0 0 300 120" preserveAspectRatio="none" role="img" aria-label="Cash balance over time"></svg>
+</div></div></header>
+
+<section class="flowband" aria-label="How a document becomes data" style="padding-bottom:0"><div class="wrap"><div class="fb"><div class="rc"><i class="scan"></i><b>CAFÉ NOOR</b><p>Sat 14 Nov, 9:40 pm</p><p>Dinner x2 ... 48.00</p><p>Tax ... 4.80</p><p>Total ... 52.80</p></div><div class="ai">Vision AI reads it</div><pre class="json"><span style="--i:0">{</span><span style="--i:1">  "vendor": "Café Noor",</span><span style="--i:2">  "date": "2026-11-14",</span><span style="--i:3">  "total": 52.80,</span><span style="--i:4">  "flag": "weekend spend"</span><span style="--i:5">}</span></pre></div><small class="fc">Illustrative sample of the idea behind LedgerAI and AuditGuard: an image goes in, structured data comes out.</small></div></section>
+<div class="mq" aria-label="Technologies"><div class="mt"><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">Llama 3.1</span><span class="chip">Llama 3.2 Vision</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">PyTorch</span><span class="chip">n8n</span><span class="chip">Docker</span><span class="chip">Groq</span><span class="chip">Vercel</span><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Python</span><span class="chip">Llama 3.1</span><span class="chip">Llama 3.2 Vision</span><span class="chip">Claude</span><span class="chip">Gemini</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">PyTorch</span><span class="chip">n8n</span><span class="chip">Docker</span><span class="chip">Groq</span><span class="chip">Vercel</span></div></div>
+<div class="proof"><div class="wrap">
+<div><b>9</b><span>projects documented below</span></div>
+<div><b>5</b><span>finance AI tools in one suite</span></div>
+<div><b>2</b><span>client sites shipped</span></div>
+<div><b>4</b><span>model families: Llama, Claude, Gemini, YOLOv8</span></div>
+</div></div>
+
+<section id="offer"><div class="wrap">
+<h2>What do you need built?</h2>
+<p class="lead">Find your problem below. Each card shows what I deliver and the projects that prove it.</p>
+<div class="ogrid"><article class="card"><h3>Finance automation</h3><div><h4>The problem</h4><p>Month-end close, reconciliation and expense checks eat analyst days and still miss errors.</p></div><div><h4>What I deliver</h4><p>LLM tools that match, compare and flag, then write the commentary.</p><div class="chips" style="margin-top:12px"><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Groq</span><span class="chip">Llama 3.1</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p0" style="color:var(--acc)">RunwayAI</a></p><p><a href="#p1" style="color:var(--acc)">AuditGuard AI</a></p><p><a href="#p2" style="color:var(--acc)">ReconAI</a></p><p><a href="#p3" style="color:var(--acc)">VarianceAI</a></p></div></article><article class="card"><h3>Documents to data</h3><div><h4>The problem</h4><p>Invoices and receipts arrive as photos and someone retypes them.</p></div><div><h4>What I deliver</h4><p>Vision pipelines that return clean JSON ready to import.</p><div class="chips" style="margin-top:12px"><span class="chip">Llama 3.2 Vision</span><span class="chip">JSON</span><span class="chip">Next.js</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p4" style="color:var(--acc)">LedgerAI</a></p><p><a href="#p1" style="color:var(--acc)">AuditGuard AI</a></p></div></article><article class="card"><h3>Workflow automation</h3><div><h4>The problem</h4><p>Repetitive multi-step jobs live in heads and spreadsheets.</p></div><div><h4>What I deliver</h4><p>Dockerised n8n workflows chaining APIs and AI models.</p><div class="chips" style="margin-top:12px"><span class="chip">n8n</span><span class="chip">Docker</span><span class="chip">AI APIs</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p5" style="color:var(--acc)">E-commerce try-on and video</a></p></div></article><article class="card"><h3>Computer vision</h3><div><h4>The problem</h4><p>You need a machine to recognise specific things in images or video.</p></div><div><h4>What I deliver</h4><p>Custom datasets and trained YOLOv8 models.</p><div class="chips" style="margin-top:12px"><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">Roboflow</span><span class="chip">PyTorch</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p6" style="color:var(--acc)">Custom detection system</a></p></div></article><article class="card"><h3>Websites and apps</h3><div><h4>The problem</h4><p>A business needs a credible, fast site or custom tool.</p></div><div><h4>What I deliver</h4><p>Responsive React and Next.js builds shipped on Vercel.</p><div class="chips" style="margin-top:12px"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind</span><span class="chip">Vercel</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p7" style="color:var(--acc)">Client sites and branding</a></p><p><a href="#p8" style="color:var(--acc)">Library and School Management</a></p></div></article><article class="card"><h3>Prompt and code evaluation</h3><div><h4>The problem</h4><p>AI output needs to be checked and prompts need to be reliable.</p></div><div><h4>What I deliver</h4><p>Prompt engineering and code evaluation across Claude, Gemini and Llama.</p><div class="chips" style="margin-top:12px"><span class="chip">Claude</span><span class="chip">Gemini API</span><span class="chip">Llama</span><span class="chip">Prompt engineering</span></div></div><div><h4>Proof in my projects</h4><p><a href="#p0" style="color:var(--acc)">RunwayAI</a></p></div></article></div>
+</div></section>
+
+<section id="work"><div class="wrap">
+<h2>Project details</h2>
+<p class="lead">Tap a project to open it: what goes in, what comes out, and the stack. Sample rows are illustrative, not client data.</p>
+<div class="acc"><details id="p0" open><summary><div>RunwayAI<span>Predictive cash flow</span></div></summary><div class="pview in"><h3>RunwayAI</h3><p class="tag">Executive command center that tells a CFO when the cash runs out and what to do about it.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Cash on hand</span><b class="ok">✓ $600k</b></div><div class="r" style="animation-delay:90ms"><span>Average monthly burn</span><b class="ok">✓ $70k</b></div><div class="r" style="animation-delay:180ms"><span>Projected cash-zero</span><b class="flag">! Aug 2027</b></div><div class="r" style="animation-delay:270ms"><span>Lever: slow hiring</span><b class="ok">✓ +2 months</b></div></div><div class="sub">How it works</div><div class="flow"><div>P&amp;L CSVs</div><i>›</i><div>Burn rate model</div><i>›</i><div>Cash-zero date</div><i>›</i><div>AI strategic levers</div></div><div class="sub">What it does</div><ul><li>Ingests historical P&amp;L files and current liquidity.</li><li>Calculates monthly burn and predicts cash-zero dates.</li><li>Generates AI-written strategic levers.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Groq SDK</span><span class="chip">Llama 3.1</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p1"><summary><div>AuditGuard AI<span>Receipt compliance</span></div></summary><div class="pview in"><h3>AuditGuard AI</h3><p class="tag">Forensic travel and expense auditing that reads receipt images and checks them against policy.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Dinner receipt, Saturday night</span><b class="flag">! Weekend spend</b></div><div class="r" style="animation-delay:90ms"><span>Taxi fare, Tuesday</span><b class="ok">✓ Within policy</b></div><div class="r" style="animation-delay:180ms"><span>Hotel, five nights</span><b class="flag">! Over nightly cap</b></div></div><div class="sub">How it works</div><div class="flow"><div>Receipt images</div><i>›</i><div>Vision model</div><i>›</i><div>Policy cross-check</div><i>›</i><div>Flagged report</div></div><div class="sub">What it does</div><ul><li>Cross-references receipt images against expense policy.</li><li>Flags anomalies, weekend transactions and violations.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Llama 3.2 Vision</span><span class="chip">Next.js 14</span><span class="chip">TypeScript</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p2"><summary><div>ReconAI<span>Bank reconciliation</span></div></summary><div class="pview in"><h3>ReconAI</h3><p class="tag">Matches bank statements to company ledgers even when the names and dates don’t line up.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>ACME LTD ↔ Acme Limited</span><b class="ok">✓ Matched</b></div><div class="r" style="animation-delay:90ms"><span>Bank fee, no ledger entry</span><b class="flag">! Unrecorded</b></div><div class="r" style="animation-delay:180ms"><span>Payment landed 3 days late</span><b class="ok">✓ Date delay matched</b></div></div><div class="sub">How it works</div><div class="flow"><div>Bank statement</div><i>›</i><div>Ledger</div><i>›</i><div>LLM fuzzy match</div><i>›</i><div>Reconciled list</div></div><div class="sub">What it does</div><ul><li>Resolves vendor name variations.</li><li>Handles date delays between systems.</li><li>Surfaces unrecorded bank fees.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Llama 3.1</span><span class="chip">Next.js 14</span><span class="chip">TypeScript</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p3"><summary><div>VarianceAI<span>Month-end analysis</span></div></summary><div class="pview in"><h3>VarianceAI</h3><p class="tag">Compares General Ledgers across periods and writes the commentary a CFO expects.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Cloud hosting</span><b class="flag">! Up vs last month</b></div><div class="r" style="animation-delay:90ms"><span>Salaries</span><b class="ok">✓ Flat</b></div><div class="r" style="animation-delay:180ms"><span>Commentary</span><b class="ok">✓ Drafted</b></div></div><div class="sub">How it works</div><div class="flow"><div>Multi-period GLs</div><i>›</i><div>Compare periods</div><i>›</i><div>Find cost drivers</div><i>›</i><div>CFO commentary</div></div><div class="sub">What it does</div><ul><li>Compares multiple periods of General Ledger data.</li><li>Explains cost drivers and anomalies in plain language.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Llama 3.1</span><span class="chip">Next.js 14</span><span class="chip">TypeScript</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p4"><summary><div>LedgerAI<span>Document to ERP</span></div></summary><div class="pview in"><h3>LedgerAI</h3><p class="tag">Vision AI that turns receipt and invoice images into structured data an ERP can import.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>receipt.jpg</span><b class="ok">✓ Vendor, date, total → JSON</b></div><div class="r" style="animation-delay:90ms"><span>invoice.png</span><b class="ok">✓ Line items → JSON</b></div></div><div class="sub">How it works</div><div class="flow"><div>Receipt or invoice image</div><i>›</i><div>Vision AI</div><i>›</i><div>Structured JSON</div><i>›</i><div>ERP ingestion</div></div><div class="sub">What it does</div><ul><li>Converts unstructured images into defined JSON schemas.</li><li>Built for direct ERP ingestion, no retyping.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Llama 3.2 Vision</span><span class="chip">JSON schemas</span><span class="chip">Next.js 14</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p5"><summary><div>Virtual try-on pipeline<span>n8n, Docker</span></div></summary><div class="pview in"><h3>E-commerce try-on and video</h3><p class="tag">A containerised workflow that turns a product photo into a try-on image and a short video.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Product photo</span><b class="ok">✓ Background removed</b></div><div class="r" style="animation-delay:90ms"><span>Garment on model</span><b class="ok">✓ Rendered</b></div><div class="r" style="animation-delay:180ms"><span>Short clip</span><b class="ok">✓ Generated</b></div></div><div class="sub">How it works</div><div class="flow"><div>Product photo</div><i>›</i><div>Background removal</div><i>›</i><div>Garment try-on</div><i>›</i><div>Image to video</div></div><div class="sub">What it does</div><ul><li>Orchestrates background removal, virtual try-on and video generation.</li><li>Runs as a Docker container for commercial apparel.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">n8n</span><span class="chip">Docker</span><span class="chip">AI vision APIs</span><span class="chip">AI video APIs</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p6"><summary><div>Object detection<span>YOLOv8, OpenCV</span></div></summary><div class="pview in"><h3>Custom detection system</h3><p class="tag">A trained model that recognises and classifies objects in real time.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Dataset labelled</span><b class="ok">✓ Roboflow</b></div><div class="r" style="animation-delay:90ms"><span>YOLOv8 trained</span><b class="ok">✓ Parameters tuned</b></div><div class="r" style="animation-delay:180ms"><span>Live frame</span><b class="ok">✓ Objects boxed</b></div></div><div class="sub">How it works</div><div class="flow"><div>Curated dataset</div><i>›</i><div>Train YOLOv8</div><i>›</i><div>Evaluate</div><i>›</i><div>Real-time detection</div></div><div class="sub">What it does</div><ul><li>Dataset curation and training configuration.</li><li>Real-time recognition and classification.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">Python</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">Roboflow</span><span class="chip">Ultralytics</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p7"><summary><div>Client websites<span>Standard Watcher, Zevora</span></div></summary><div class="pview in"><h3>Client sites and branding</h3><p class="tag">Web infrastructure and digital branding for two businesses.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Standard Watcher Tech</span><b class="ok">✓ Security and surveillance</b></div><div class="r" style="animation-delay:90ms"><span>Zevora</span><b class="ok">✓ Digital agency</b></div></div><div class="sub">How it works</div><div class="flow"><div>Brief</div><i>›</i><div>Design</div><i>›</i><div>Build</div><i>›</i><div>Deploy</div></div><div class="sub">What it does</div><ul><li>Built and deployed web infrastructure.</li><li>Delivered digital branding for both clients.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">React</span><span class="chip">Next.js</span><span class="chip">Tailwind CSS</span><span class="chip">Vercel</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details><details id="p8"><summary><div>Desktop systems<span>C#, SQL Server, Tkinter</span></div></summary><div class="pview in"><h3>Library and School Management</h3><p class="tag">Two database-backed desktop apps for records and administration.</p><div class="win"><header><i></i><i></i><i></i><span>Illustrative sample</span></header><div class="r" style="animation-delay:0ms"><span>Library system</span><b class="ok">✓ C# and SQL Server</b></div><div class="r" style="animation-delay:90ms"><span>School system</span><b class="ok">✓ Python and Tkinter</b></div></div><div class="sub">How it works</div><div class="flow"><div>Schema</div><i>›</i><div>Data access</div><i>›</i><div>Desktop UI</div><i>›</i><div>Records</div></div><div class="sub">What it does</div><ul><li>Relational schema and custom data-access classes in C#.</li><li>Student record and admin management in Python.</li></ul><div class="sub">Built with</div><div class="chips"><span class="chip">C#</span><span class="chip">SQL Server</span><span class="chip">Python</span><span class="chip">Tkinter</span></div><div class="row2"><a class="btn" href="#hire">Discuss a project like this</a></div></div></details></div>
+</div></section>
+
+<section id="how"><div class="wrap">
+<h2>How a project runs with me</h2>
+<div class="steps">
+<div><h3>Scope the job</h3><p>We agree on input, output and what “working” means before any code.</p></div>
+<div><h3>Prototype on real data</h3><p>A working slice with your files, so you see model quality early.</p></div>
+<div><h3>Harden and deploy</h3><p>Typed code, error states, and a Vercel or Docker deploy.</p></div>
+<div><h3>Hand over</h3><p>Repo, run instructions and a walkthrough. You own everything.</p></div>
+</div></div></section>
+
+<section id="path"><div class="wrap two">
+<div><h2>Resume</h2>
+<div class="tl">
+<div><time>2025 to present</time><h3>AI & Full-Stack Developer, freelance</h3><p>Custom AI web apps, n8n automations and responsive platforms for local and international clients.</p>
+<p>Built web infrastructure and digital branding for Standard Watcher Tech (security and surveillance) and Zevora (digital agency).</p></div>
+<div><time>2024 to present</time><h3>BS Artificial Intelligence</h3><p>Mohammad Ali Jinnah University, Karachi. Coursework: AI, machine learning, data structures and algorithms, database systems, operating systems, data communication and networking.</p></div>
+</div></div>
+<div><h2 style="font-size:28px">At a glance</h2>
+<p class="lead">Karachi, Pakistan, working remotely.<br>English (fluent), Urdu (native).<br>Focus: LLM orchestration, computer vision, enterprise SaaS.</p>
+<div class="row2"><button class="btn o js-only" onclick="window.print()">Save resume as PDF</button></div></div>
+</div></section>
+
+<section id="stack"><div class="wrap"><h2>The toolkit</h2><div class="sk" style="margin-top:26px"><div class="row"><b>Languages</b><div class="chips"><span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">JavaScript (ES6+)</span><span class="chip">C#</span><span class="chip">SQL</span><span class="chip">HTML5 / CSS3</span></div></div><div class="row"><b>AI and vision</b><div class="chips"><span class="chip">Llama 3.1 70B</span><span class="chip">Llama 3.2 90B Vision</span><span class="chip">Claude</span><span class="chip">Gemini API</span><span class="chip">Prompt engineering</span><span class="chip">YOLOv8</span><span class="chip">OpenCV</span><span class="chip">PyTorch</span><span class="chip">Scikit-learn</span><span class="chip">Ultralytics</span><span class="chip">Roboflow</span></div></div><div class="row"><b>Frameworks</b><div class="chips"><span class="chip">Next.js 14 (App Router)</span><span class="chip">React</span><span class="chip">Tailwind CSS</span><span class="chip">Shadcn UI</span><span class="chip">Node.js</span><span class="chip">Tkinter</span></div></div><div class="row"><b>Automation and ops</b><div class="chips"><span class="chip">n8n</span><span class="chip">Docker</span><span class="chip">SQL Server</span><span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Vercel CI/CD</span></div></div></div></div></section>
+
+<div class="end" id="hire"><div class="wrap">
+<div><h2>Tell me what goes in and what should come out.</h2>
+<p class="lead">I’ll reply with an honest take on whether it’s a good fit, and how I’d build it.</p>
+<div class="links">
+<a class="btn o" href="https://www.linkedin.com/in/shoaib-jamal-827910328" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn o" href="https://github.com/ShoaibJamal11" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div>
+<div class="demo"><h3>Contact</h3><p class="lead" style="margin-top:8px">Email is the fastest way to reach me.</p><input id="em" readonly value="shoaibjamal09@gmail.com" aria-label="Email address" style="width:100%;margin:14px 0 0;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px;font:16px var(--b)"><div class="row2"><a class="btn" href="mailto:shoaibjamal09@gmail.com?subject=Project%20enquiry">Open email app</a><button class="btn o js-only" id="cp" type="button">Copy email</button></div><small style="display:block;margin-top:12px">Or send a message on LinkedIn.</small></div>
+</div></div>
+<footer><div class="wrap">Shoaib Jamal, Karachi, Pakistan</div></footer>
+<a class="btn fab" href="#hire">Hire me</a>
+
+<script>
+const $=id=>document.getElementById(id);
+let t='dark';$('th').onclick=()=>{t=t==='dark'?'light':'dark';document.documentElement.dataset.theme=t;document.documentElement.style.colorScheme=t};
+addEventListener('scroll',()=>{const x=document.documentElement;$('bar').style.width=(x.scrollTop/(x.scrollHeight-x.clientHeight)*100)+'%'},{passive:true});
+const MON=['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+function run(){const c=+$('c').value,b=+$('b').value,g=+$('g').value/100;
+$('co').textContent='$'+c+'k';$('bo').textContent='$'+b+'k';$('go').textContent=(g*100)+'%';
+let cash=c,burn=b,pts=[c],m=0;while(cash>0&&m<36){cash-=burn;burn*=1+g;m++;pts.push(Math.max(cash,0))}
+const d=new Date(2026,10+m,1);
+if(cash>0){$('dt').textContent='36+ months';$('mn').textContent='Comfortable runway'}else{$('dt').textContent=MON[d.getMonth()]+' '+d.getFullYear();$('mn').textContent=m+' months left'}
+const mx=Math.max(...pts),n=pts.length-1||1;
+$('svg').innerHTML='<line x1="0" y1="112" x2="300" y2="112" stroke="var(--line)"/><polyline points="'+pts.map((v,i)=>(i/n*300).toFixed(1)+','+(112-v/mx*104).toFixed(1)).join(' ')+'" fill="none" stroke="var(--acc)" stroke-width="2.5" vector-effect="non-scaling-stroke"/>'+(cash<=0?'<circle cx="300" cy="112" r="4" fill="var(--warn)"/>':'')}
+['c','b','g'].forEach(i=>$(i).oninput=run);run();
+$('cp').onclick=()=>{const e='shoaibjamal09@gmail.com',done=()=>{$('cp').textContent='Copied'},fb=()=>{$('em').select();try{document.execCommand('copy');done()}catch(x){}};try{navigator.clipboard.writeText(e).then(done,fb)}catch(x){fb()}};
+function openT(){const x=document.getElementById(location.hash.slice(1));if(x&&x.tagName=='DETAILS')x.open=true}
+addEventListener('hashchange',openT);openT();
+</script>
+</body>
+</html>
